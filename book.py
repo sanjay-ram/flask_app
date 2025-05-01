@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://root:Data7Dollar$@localhost:3306/bookstore'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Data7Dollar$@localhost:3306/bookstore'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

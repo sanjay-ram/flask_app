@@ -1,0 +1,10 @@
+{
+  "booka": {
+    "title": "Harry Potter",
+    "auther" : "Jay Kay Rowling"
+  },
+  "bookb": {
+    "title": "Die Entdeckung der Langsamkeit",
+    "author": "Sten Nadolny"
+  }
+}
