@@ -13,6 +13,12 @@ class Book(db.Model):
     def __repr__(self):
         return '<Book %r>' % self.title
 
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "title": self.title,
+            "author": self.author
+        }
 with app.app_context():
     db.create_all()
 
