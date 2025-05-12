@@ -43,6 +43,4 @@ class Exercises(db.Model):
     status = db.Column(db.String(80), unique=True, nullable=False)
     teacher_id = db.Column(db.Integer, db.ForeignKey('teacher.id'), nullable=False)
 
-with app.app_context():
-    db.create_all()
-    print("Success !")
+
