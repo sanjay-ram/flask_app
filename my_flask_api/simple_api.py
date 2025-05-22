@@ -9,6 +9,6 @@ class greeting(Resource):
         return {'greeting': 'Hello Welt!'}
 
 
-api.add_resource(greeting, '/')
+api.add_resource(greeting, '/hello')
 if __name__ == '__main__':
     app.run(debug=True)
